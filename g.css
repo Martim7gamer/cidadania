@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    position: relative;
+}
+
+.logo {
+    position: fixed;
+    left: 2.5vh;
+    top: 2.5vh;
+    max-height: 10vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15vh 0 15vh;
+}
+
+span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: rgb(56, 56, 56);
+    font-size: 4vh;
+}
+
+#premise {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vh 2vh 2vh 2vh;
+    background: #00a4e0;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.cam {
+    width: 100%;
+    min-height: 40vh;
+    background: #e0e0e0;
+}
+
+#premise span {
+    color: #fff;
+    font-weight: 1000;
+    font-size: 5.5vh;
+    text-align: center;
+}
+
+.timers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 5vh;
+}
+
+.timers .side, .timers .center {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.timers .timer {
+    width: 100%;
+    border-radius: 2vh;
+    background: #00a4e0;
+    box-sizing: border-box;
+    padding: 1vh 10vh 1vh 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timers .timer span {
+    color: #fff;
+    font-size: 6vh;
+}
+
+.center .timer {
+    background: #f1c232ff;
+    height: 20vh;
+    border-radius: 0;
+    border-top-left-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+}
+
+.center .timer span {
+    font-size: 7.5vh;
+}
