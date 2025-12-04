@@ -14,7 +14,7 @@ body {
     position: fixed;
     left: 2.5vh;
     top: 2.5vh;
-    max-height: 10vh;
+    max-height: 9vh;
 }
 
 .main {
@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 15vh 0 15vh;
+    /*padding: 0 15vh 0 15vh;*/
 }
 
 span {
@@ -33,6 +33,22 @@ span {
     font-weight: 800;
     color: rgb(56, 56, 56);
     font-size: 4vh;
+}
+
+#starting-soon {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#starting-soon img {
+    height: 80vh;
 }
 
 #premise {
@@ -44,10 +60,29 @@ span {
     margin-top: 2vh;
 }
 
+@keyframes premiseappear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#premise.new span {
+    animation-name: premiseappear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
 .cam {
     width: 100%;
-    min-height: 40vh;
+    min-height: 30vh;
     background: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #premise span {
@@ -63,11 +98,17 @@ span {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    margin-top: 5vh;
+    margin-top: 12vh;
+    padding: 0 15vh 0 15vh;
+}
+
+.max-timer {
+    font-size: 3.85vh !important;
+    color: #f4f4f4 !important;
 }
 
 .timers .side, .timers .center {
-    height: 20vh;
+    height: 17vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -82,6 +123,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+}
+
+.timers .timer.active {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 7px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transform: scale(1.1);
 }
 
 .timers .timer span {
@@ -91,7 +138,7 @@ span {
 
 .center .timer {
     background: #f1c232ff;
-    height: 20vh;
+    height: 17vh;
     border-radius: 0;
     border-top-left-radius: 4vh;
     border-bottom-right-radius: 4vh;

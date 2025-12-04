@@ -1,0 +1,30 @@
+{
+    "retrieve": true,
+    "retrieveType": "server_variables",
+    "claims": [
+        {
+            "topic": "Pena de Morte e Prisão Perpétua",
+            "text": "A pena de morte é necessária para proteger a sociedade de criminosos irrecuperáveis."
+        },
+        {
+            "topic": "Pena de Morte e Prisão Perpétua",
+            "text": "A execução é mais humana do que condenar alguém à prisão perpétua."
+        },
+        {
+            "topic": "Violência Policial e Uso Excessivo da Força",
+            "text": "Casos de violência policial são superestimados pela mídia e prejudicam injustamente as forças de segurança."
+        },
+        {
+            "topic": "Violência Policial e Uso Excessivo da Força",
+            "text": "Agentes da polícia que usam força excessiva não deveriam ser julgados como cidadãos comuns."
+        },
+        {
+            "topic": "Eutanásia e Suicídio Assistido",
+            "text": "Negar a eutanásia é obrigar pessoas a viver contra a própria vontade, isso é tortura."
+        },
+        {
+            "topic": "Eutanásia e Suicídio Assistido",
+            "text": "Famílias deveriam poder decidir pela eutanásia de parentes inconscientes ou sem prognóstico de recuperação."
+        }
+    ]
+}
